@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Work+Sans:wght@600&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.lead-box {
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 2rem 0;
+    background-color: white;
+    color: #333;
+    box-shadow: 2px 2px 10px #888888;
+    font-weight: 600;
+}
+
+.lead-box-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lead-info {
+    padding-bottom: 2rem;
+}
+
+.lead-info div {
+    padding-bottom: .5rem;
+}
+
+.lead-label {
+    font-weight: 100;
+}
+
+.notes {
+    font-weight: 400;
+}
+
+.lead-container-buttons {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lead-box-mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.centered-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lead-mid-label {
+    padding-bottom: .5rem;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+    padding: .5em 1em;
+    background-color: #FB6B6B;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    margin: .5em;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.delete-svg {
+    filter: invert(1);
+    height: 1em;
+    padding-right: .5em;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+    padding: .5em 1em;
+    background-color: #E4E4E4;
+    color: #4E4E4E;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    margin: .5em;
+}
+
+.edit-button:hover {
+    cursor: pointer;
+}
+
+.edit-svg {
+    filter: invert(.6);
+    height: 1em;
+    padding-right: .5em;
+}
+
+
