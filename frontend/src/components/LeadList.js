@@ -7,15 +7,15 @@ const LeadList = ({id, firstName, lastName, email, contacted, notes, created, up
     const handleOpen = () => setShow(true)
     const handleClose = () => setShow(false)
 
+    // React hooks for state variables
     const [ newFirstName, setFirstName ] = useState(firstName)
     const [ newLastName, setLastName ] = useState(lastName)
     const [ newEmail, setEmail ] = useState(email)
     const [ newNotes, setNotes] = useState(notes) 
 
-
+    // Event handler for editing leads
     const editLeadHandler = (id, firstName, lastName, email, notes) => {
         handleClose()
-        
         const lead = {
             id,
             firstName,
@@ -24,13 +24,10 @@ const LeadList = ({id, firstName, lastName, email, contacted, notes, created, up
             notes,
         }
         editLead(lead)
-        document.getElementsByTagName('input').value = ''
-        
     }
 
     return (
         <>
-         
         <div className='lead-box'>
             <div className='lead-box-top'>
                 <div className='lead-info'>
@@ -60,7 +57,6 @@ const LeadList = ({id, firstName, lastName, email, contacted, notes, created, up
             </div>
 
             <div className='lead-box-mid'>
-                 
                 <div className='centered-col'>
                     <div className='lead-mid-label'>Created:</div>
                     <span>{created}</span>
@@ -71,7 +67,8 @@ const LeadList = ({id, firstName, lastName, email, contacted, notes, created, up
                 </div>
             </div>
 
-             
+            {/* Edit Lead Modal (React-Bootstrap) */}
+
             <Modal  className='lead-box' show={show} onHide={handleClose}>
                 <Modal.Header>
                     <Modal.Title>Edit Lead</Modal.Title>

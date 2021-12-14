@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&family=Work+Sans:wght@600&display=swap');
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 .lead-box {
     border: solid 1px white;
     border-radius: 15px;
@@ -114,5 +113,3 @@
     height: 1em;
     padding-right: .5em;
 }
-
-

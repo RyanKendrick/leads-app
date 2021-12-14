@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import '../styles/LeadForm.css'
 
 const LeadForm = ({ addLead }) => {
+    // React hooks for state variables
     const [ firstName, setFirstName ] = useState('')
     const [ lastName, setLastName ] = useState('')
     const [ email, setEmail ] = useState('')
     const [ notes, setNotes] = useState('')
 
+    // Event handler for adding new lead
     const addLeadHandler = (e) => {
        let form = document.getElementById('main-form')
         e.preventDefault()
@@ -20,13 +22,14 @@ const LeadForm = ({ addLead }) => {
         form.reset()
     }
     
-
     return (
         <>
-        <div className="header"><img className="logo" src="./images/logo.png" alt="" /><h1>LeadTracker</h1></div>
+        <div className="header">
+            <img className="logo" src="./images/logo.png" alt="LeadTracker" />
+            <h1>LeadTracker</h1>
+        </div>
         <h2 className="form-title">Add a new Lead!</h2>
         <div>
-            
             <form data-testid='lead-form' id='main-form' className="lead-form-container">
                 <div className="form-entry" >
                     <label>First Name</label>

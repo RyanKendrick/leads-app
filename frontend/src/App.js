@@ -4,11 +4,11 @@ import LeadList from './components/LeadList';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
-
-
 function App() {
   const [leads, setLeads] = useState([])
 
+
+  // Functions for CRUD operations
   const getLeads = async () => {
     try {
       const response = await axios.get('/api/leads')
