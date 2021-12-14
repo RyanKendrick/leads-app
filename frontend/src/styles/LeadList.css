@@ -35,6 +35,16 @@
     font-weight: 400;
 }
 
+.edit-notes {
+    height: 5em;
+}
+
+.edit-form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .lead-container-buttons {
     display: flex;
     flex-direction: column;

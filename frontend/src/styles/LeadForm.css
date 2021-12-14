@@ -1,3 +1,21 @@
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.logo {
+    height: 3em;
+    padding-right: 1em;
+}
+
+.form-title {
+    padding-top: 1em;
+}
+
 .lead-form-container {
     border: none;
     border-radius: 15px;

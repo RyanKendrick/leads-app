@@ -1,4 +1,4 @@
-import './App.css';
+import '../src/styles/App.css';
 import LeadForm from './components/LeadForm';
 import LeadList from './components/LeadList';
 import axios from 'axios';

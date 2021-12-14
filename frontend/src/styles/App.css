@@ -10,6 +10,10 @@ html {
     overflow-y: scroll;
 }
 
+h1, h2, h4 {
+    color: #575757;
+}
+
 body {
     background-color: #f7f7f7 !important;
 }

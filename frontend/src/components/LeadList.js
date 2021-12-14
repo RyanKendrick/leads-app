@@ -77,22 +77,24 @@ const LeadList = ({id, firstName, lastName, email, contacted, notes, created, up
                     <Modal.Title>Edit Lead</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <form id='edit-form-main' action="" method="get">
+                    <form id='edit-form-main' className='form-entry'  method="get">
                         <div>
-                            <label for="name">First Name: </label>
-                            <input onChange={e => setFirstName(e.target.value)} value={newFirstName} type="text" name="name" id="name" required />
-                        </div>
-                        <div>
-                            <label for="email">Last Name: </label>
-                            <input onChange={e => setLastName(e.target.value)} value={newLastName} type="email" name="email" id="email" required />
-                        </div>
-                        <div>
-                            <label for="email">Email: </label>
-                            <input onChange={e => setEmail(e.target.value)} value={newEmail} type="email" name="email" id="email" required />
-                        </div>
-                        <div>
-                            <label for="email">Notes: </label>
-                            <input onChange={e => setNotes(e.target.value)} value={newNotes} type="email" name="email" id="email" required />
+                            <div className='edit-form-content' >
+                                <label>First Name: </label>
+                                <input onChange={e => setFirstName(e.target.value)} value={newFirstName} type="text" id="name" required />
+                            </div>
+                            <div className='edit-form-content' >
+                                <label>Last Name: </label>
+                                <input onChange={e => setLastName(e.target.value)} value={newLastName} type="text" id="email" required />
+                            </div>
+                            <div className='edit-form-content' >
+                                <label>Email: </label>
+                                <input onChange={e => setEmail(e.target.value)} value={newEmail} type="text"  id="email" required />
+                            </div>
+                            <div className='edit-form-content' >
+                                <label>Notes: </label>
+                                <input className='edit-notes' onChange={e => setNotes(e.target.value)} value={newNotes} type="text" id="email" required />
+                            </div>
                         </div>
                 
                     </form>
